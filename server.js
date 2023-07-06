@@ -7,7 +7,12 @@ import "moment/locale/vi";
 const app = express();
 db.connect();
 
-app.use(cors());
+app.use(
+    cors({
+        origin: process.env.END_POINT_ALL.split(","),
+        credentials: true,
+    })
+);
 
 // parse requests of content-type - application/json
 app.use(express.json());
