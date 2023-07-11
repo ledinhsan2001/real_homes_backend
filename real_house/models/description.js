@@ -11,8 +11,6 @@ const DescriptionSchema = new Schema(
         },
         short_description: {
             type: String,
-            maxLength: [1000, "Dài nhất 1000 kí tự."],
-            required: [true, "Phải tóm tắt nội dung."],
         },
         content_description: {
             type: String,

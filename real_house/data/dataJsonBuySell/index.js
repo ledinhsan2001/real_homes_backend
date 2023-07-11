@@ -1,0 +1,10 @@
+export { default as banBietThu } from "./banBietThu.json";
+export { default as banCanHo } from "./banCanHo.json";
+export { default as banCuaHang } from "./banCuaHang.json";
+export { default as banDat } from "./banDat.json";
+export { default as banDatNenDuAn } from "./banDatNenDuAn.json";
+export { default as banKhachSan } from "./banKhachSan.json";
+export { default as banKhoXuong } from "./banKhoXuong.json";
+export { default as banMatTien } from "./banMatTien.json";
+export { default as banNhaRieng } from "./banNhaRieng.json";
+export { default as banNhaTro } from "./banNhaTro.json";

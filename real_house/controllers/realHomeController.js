@@ -512,7 +512,7 @@ export const drop = async (req, res) => {
         const image = await Image.findById({ _id: images_id });
         if (image) {
             // Delete on cloudinary
-            image.url.forEach(async (item) => {
+            image?.url?.forEach(async (item) => {
                 await cloudinary.uploader.destroy(item?.public_id);
             });
         }
@@ -527,6 +527,7 @@ export const drop = async (req, res) => {
             message: "Bạn đã xóa bất động sản thành công!",
         });
     } catch (error) {
+        console.log(error);
         return res.status(400).json({
             success: false,
             message: "Xóa bất động sản không thành công!",

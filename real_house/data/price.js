@@ -45,7 +45,7 @@ export const price_buysell = [
     {
         _id: "tren_15ty",
         min: 15,
-        max: 999,
+        max: 99999,
         value: "Trên 15tỷ",
     },
 ];
@@ -96,7 +96,7 @@ export const price_rental = [
     {
         _id: "tren_15trieu",
         min: 15,
-        max: 999,
+        max: 99999,
         value: "Trên 15triệu",
     },
 ];
@@ -135,7 +135,7 @@ export const area_data = [
     {
         _id: "tren_90m",
         min: 90,
-        max: 999,
+        max: 99999,
         value: "Trên 90m",
     },
 ];

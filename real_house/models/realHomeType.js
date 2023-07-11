@@ -8,9 +8,6 @@ const RealHomeType = new Schema(
             type: String,
             required: [true, "Phải nhập kiểu bất động sản."],
         },
-        sub_header: {
-            type: String,
-        },
         transaction_type: TransactionTypeSchema,
     },
     {
