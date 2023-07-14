@@ -183,14 +183,9 @@ export const getAllLimit = catchAsync(async (req, res) => {
     //search is format arr[[1,2,3]] = object
     let arr_price;
     let arr_area;
-    arr_price =
-        typeof price_id === "object"
-            ? (arr_price = price_id[0])
-            : (arr_price = [price_id]);
-    arr_area =
-        typeof area_id === "object"
-            ? (arr_area = area_id[0])
-            : (arr_area = [area_id]);
+
+    arr_price = price_id?.split(",");
+    arr_area = area_id?.split(",");
 
     let sort = +sort_id;
     let objsort = {};
